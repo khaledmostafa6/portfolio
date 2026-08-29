@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khaled Mostafa | Flutter Developer & Software Engineer</title>
+  <meta name="description" content="Khaled Mostafa — Flutter Developer & Software Engineer building modern, scalable mobile and web applications with Flutter, Firebase, and vanilla web technologies.">
+  <meta name="keywords" content="Khaled Mostafa, Flutter Developer, Software Engineer, Dart, Firebase, JavaScript, Portfolio">
+  <meta name="author" content="Khaled Mostafa">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Khaled Mostafa | Flutter Developer & Software Engineer">
+  <meta property="og:description" content="Portfolio of Khaled Mostafa — Flutter Developer & Software Engineer specializing in Flutter, Firebase and modern web technologies.">
+  <meta property="og:image" content="assets/images/project-shopifya-mobile-home.png">
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner container">
+      <a href="#home" class="logo">Khaled<span class="dot">.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <span class="badge"><span class="badge-dot"></span> Available for opportunities</span>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="text-gradient">Khaled Mostafa</span>
+        </h1>
+
+        <h2 class="hero-subtitle" id="typingTarget" aria-live="polite"></h2>
+
+        <p class="hero-desc">
+          Passionate software developer focused on building modern, scalable, and user-friendly
+          applications using Flutter, Firebase, and modern web technologies.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/khaledmostafa6" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.5 0 12.3c0 5.42 3.44 10.02 8.2 11.65.6.11.82-.27.82-.59 0-.29-.01-1.07-.02-2.1-3.34.74-4.04-1.65-4.04-1.65-.55-1.42-1.34-1.8-1.34-1.8-1.1-.77.08-.75.08-.75 1.22.09 1.86 1.28 1.86 1.28 1.08 1.9 2.83 1.35 3.52 1.03.11-.8.42-1.35.76-1.66-2.66-.31-5.47-1.36-5.47-6.03 0-1.33.46-2.42 1.22-3.28-.12-.31-.53-1.55.12-3.23 0 0 1-.33 3.3 1.25a11.2 11.2 0 0 1 6 0c2.28-1.58 3.29-1.25 3.29-1.25.65 1.68.24 2.92.12 3.23.76.86 1.22 1.95 1.22 3.28 0 4.68-2.81 5.71-5.49 6.02.43.38.81 1.14.81 2.3 0 1.66-.02 2.99-.02 3.4 0 .33.22.71.83.59A12.32 12.32 0 0 0 24 12.3C24 5.5 18.63 0 12 0z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/khaled-mostafa-62491836a" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
+          </a>
+          <a href="mailto:khaledlila385@gmail.com" class="social-icon" aria-label="Send an email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 6.5 12 13l9-6.5"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="code-window">
+          <div class="code-window-bar">
+            <div class="code-dots"><span></span><span></span><span></span></div>
+            <span class="code-filename">developer.dart</span>
+          </div>
+          <pre class="code-body"><code id="codeTyping"></code><span class="code-cursor">&#8203;</span></pre>
+        </div>
+        <div class="float-chip chip-1">Flutter</div>
+        <div class="float-chip chip-2">Firebase</div>
+        <div class="float-chip chip-3">Dart</div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6"/></svg>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Get to know me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <div class="about-photo-frame">
+            <img src="assets/images/profile-photo.jpeg" alt="Khaled Mostafa sitting on the trunk of a car outdoors" loading="lazy">
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <p>
+            I'm a Flutter developer and software engineer who enjoys turning ideas into real,
+            working products. I care about writing clean code, designing interfaces that feel
+            effortless to use, and shipping applications that people actually enjoy using.
+          </p>
+          <p>
+            My focus is on cross-platform mobile development with Flutter and Firebase, paired
+            with a solid foundation in web fundamentals — HTML, CSS, and JavaScript. I like
+            picking apart problems, testing ideas quickly, and refining until something feels right.
+          </p>
+
+          <ul class="about-highlights">
+            <li><span class="check">✓</span> Clean Code</li>
+            <li><span class="check">✓</span> Problem Solving</li>
+            <li><span class="check">✓</span> Responsive UI</li>
+            <li><span class="check">✓</span> Performance</li>
+            <li><span class="check">✓</span> Scalable Applications</li>
+            <li><span class="check">✓</span> Continuous Learning</li>
+          </ul>
+        </div>
+
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-number" data-count="10" data-suffix="+">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="3" data-suffix="+">0</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-card stat-card-wide">
+            <span class="stat-number" data-count="100" data-suffix="%">0</span>
+            <span class="stat-label">Passion for Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Toolbox</span>
+        <h2 class="section-title">My Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Mobile Development</h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <div class="skill-icon">📱</div>
+              <h4>Flutter</h4>
+              <p>Building fluid, cross-platform mobile apps from a single codebase.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🎯</div>
+              <h4>Dart</h4>
+              <p>Writing clean, type-safe logic that powers every Flutter app.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🤖</div>
+              <h4>Android</h4>
+              <p>Understanding native behavior to build better Android experiences.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Backend</h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <div class="skill-icon">🔥</div>
+              <h4>Firebase</h4>
+              <p>Powering apps with realtime data, hosting, and cloud functions.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🔐</div>
+              <h4>Firebase Authentication</h4>
+              <p>Secure sign-up and login flows with reliable session handling.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🗄️</div>
+              <h4>Cloud Firestore</h4>
+              <p>Structuring realtime, scalable NoSQL data for growing apps.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Web Development</h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <div class="skill-icon">🌐</div>
+              <h4>HTML5</h4>
+              <p>Semantic, accessible markup as the backbone of every page.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🎨</div>
+              <h4>CSS3</h4>
+              <p>Crafting responsive layouts with Grid, Flexbox, and animation.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">⚡</div>
+              <h4>JavaScript</h4>
+              <p>Adding interactivity and logic without relying on frameworks.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Tools</h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <div class="skill-icon">🌿</div>
+              <h4>Git</h4>
+              <p>Tracking changes and collaborating with confidence.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🐙</div>
+              <h4>GitHub</h4>
+              <p>Hosting projects, managing issues, and shipping releases.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">💻</div>
+              <h4>VS Code</h4>
+              <p>My daily editor for web projects, extensions, and debugging.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🛠️</div>
+              <h4>Android Studio</h4>
+              <p>Building, running, and debugging Flutter apps end to end.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Selected work</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="project-filters reveal" role="tablist" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="flutter" role="tab" aria-selected="false">Flutter</button>
+        <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project-card reveal" data-category="web">
+          <div class="project-media">
+            <img src="assets/images/project-codeacademy.png" alt="CodeAcademy Arabic e-learning platform homepage with course statistics" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://github.com/khaledmostafa6" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light">GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>CodeAcademy — Learning Platform</h3>
+            <p>An Arabic-first e-learning website with course catalogs, video lessons, animated statistics, and full dark-mode support, built with vanilla HTML, CSS, and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web">
+          <div class="project-media">
+            <img src="assets/images/project-caffeinecove-1.png" alt="Caffeine Cove coffee shop menu page in dark mode" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://github.com/khaledmostafa6" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light">GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Caffeine Cove — Coffee Shop Website</h3>
+            <p>A warm, elegant coffee shop site with a full menu, testimonials, and a smooth light/dark theme toggle — fully responsive from mobile to desktop.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="flutter">
+          <div class="project-media">
+            <img src="assets/images/project-shopifya-mobile-home.png" alt="Shopifya Flutter mobile app home screen with featured products" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://github.com/khaledmostafa6" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light">GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Shopifya — E-Commerce Mobile App</h3>
+            <p>A modern e-commerce mobile application with Firebase authentication, product browsing, a live cart, and a personal profile — built end-to-end in Flutter.</p>
+            <div class="project-tags">
+              <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Firestore</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web">
+          <div class="project-media">
+            <img src="assets/images/project-shopifya-web.png" alt="Shopifya e-commerce website trending products section" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://github.com/khaledmostafa6" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light">GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Shopifya — E-Commerce Website</h3>
+            <p>The web counterpart of Shopifya: product listings, a shopping cart, wishlist, and checkout flow built entirely with vanilla JavaScript, no frameworks involved.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The path so far</span>
+        <h2 class="section-title">My Journey</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Software Development Training</h3>
+            <p>Focused, hands-on training covering Flutter, Dart, Firebase, Git, and core software engineering practices — from architecture to deployment.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Personal Projects</h3>
+            <p>Building real-world applications — e-commerce apps, dashboards, and websites — to continuously sharpen and expand my development skills.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Continuous Learning</h3>
+            <p>Studying modern development practices, software architecture, UI/UX principles, and problem solving to keep growing as an engineer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">How I can help</span>
+        <h2 class="section-title">What I Do</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">📱</div>
+          <h3>Flutter App Development</h3>
+          <p>Cross-platform mobile apps built for performance, from prototype to production.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🔥</div>
+          <h3>Firebase Integration</h3>
+          <p>Authentication, Firestore, and cloud functions wired up the right way.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">💻</div>
+          <h3>Responsive Web Development</h3>
+          <p>Fast, accessible websites that work beautifully on every screen size.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🎨</div>
+          <h3>UI Implementation</h3>
+          <p>Turning designs into pixel-accurate, interactive interfaces.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🔗</div>
+          <h3>API Integration</h3>
+          <p>Connecting apps to REST APIs and third-party services reliably.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🚀</div>
+          <h3>Performance Optimization</h3>
+          <p>Profiling and refining apps so they feel fast and stay stable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <span class="eyebrow">Get in touch</span>
+          <h2 class="section-title">Let's Build Something Great Together</h2>
+          <p class="contact-desc">
+            Have a project idea, collaboration opportunity, or just want to say hello?
+            Feel free to reach out.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon">✉️</span>
+              <a href="mailto:khaledlila385@gmail.com">khaledlila385@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-icon">📞</span>
+              <a href="tel:+201220063041">+20 122 006 3041</a>
+            </li>
+            <li>
+              <span class="contact-icon">🐙</span>
+              <a href="https://github.com/khaledmostafa6" target="_blank" rel="noopener noreferrer">github.com/khaledmostafa6</a>
+            </li>
+            <li>
+              <span class="contact-icon">💼</span>
+              <a href="https://www.linkedin.com/in/khaled-mostafa-62491836a" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
+            <span class="form-error" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+            <span class="form-error" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?">
+            <span class="form-error" id="subjectError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-success" id="formSuccess" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="logo footer-logo">Khaled<span class="dot">.</span></span>
+        <p class="footer-role">Flutter Developer & Software Engineer</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/khaledmostafa6" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.5 0 12.3c0 5.42 3.44 10.02 8.2 11.65.6.11.82-.27.82-.59 0-.29-.01-1.07-.02-2.1-3.34.74-4.04-1.65-4.04-1.65-.55-1.42-1.34-1.8-1.34-1.8-1.1-.77.08-.75.08-.75 1.22.09 1.86 1.28 1.86 1.28 1.08 1.9 2.83 1.35 3.52 1.03.11-.8.42-1.35.76-1.66-2.66-.31-5.47-1.36-5.47-6.03 0-1.33.46-2.42 1.22-3.28-.12-.31-.53-1.55.12-3.23 0 0 1-.33 3.3 1.25a11.2 11.2 0 0 1 6 0c2.28-1.58 3.29-1.25 3.29-1.25.65 1.68.24 2.92.12 3.23.76.86 1.22 1.95 1.22 3.28 0 4.68-2.81 5.71-5.49 6.02.43.38.81 1.14.81 2.3 0 1.66-.02 2.99-.02 3.4 0 .33.22.71.83.59A12.32 12.32 0 0 0 24 12.3C24 5.5 18.63 0 12 0z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/khaled-mostafa-62491836a" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="mailto:khaledlila385@gmail.com" class="social-icon" aria-label="Send an email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 6.5 12 13l9-6.5"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Khaled Mostafa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
